@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #prod img{
+            height :200px;
+            width:200px;
+             border:1px solid black;
+             margin-left: 20px;
+        }
+        #prod{
+            display: grid;
+            grid-template-columns: repeat(4,25%);
+           
+            grid-gap: 20px;
+
+           
+        }
+        h1{
+             color: white;
+            text-align: center;
+        }
+        #h{
+            float :right;
+           
+        }
+
+        #sort{
+            height: 40px;
+            
+        }
+        #sort button{
+            height: 30px;
+            width: 180px;
+            color:white;
+            background-color: black;
+            border-radius: 10px;
+
+        }
+        #prod p{
+            color:white;
+        }
+       #ce{
+           align-items: center;
+           color: white;
+           margin-left: 300px;
+
+       }
+    </style>
+</head>
+<body style = "background-color:black;">
+    <h1>Product Details</h1>
+    <div id="sort">
+        <button onclick = "LtoH()" id = "l">Sort Low price to High</button>
+        <button onclick = "HtoL()" id = "h">Sort High price to Low</button>
+        <button onclick="payment()" id="ce">Payment</button>
+    </div>
+    </br>
+    <div id = "prod"></div>
+</body>
+</html>
+<script src="show.js"></script>
